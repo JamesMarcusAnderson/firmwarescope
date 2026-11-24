@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Firmware Security Toolkit — Know what's inside your firmware</title>
+  <meta name="description" content="Firmware Security Toolkit scans a firmware image and gives you a readable report: what is inside it, which known vulnerabilities it matches, and a component inventory. One-time purchase, $129.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+</head>
+<body data-page="index">
+
+<div id="site-header"></div>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>Know what's inside your firmware.</h1>
+      <p class="lede">Firmware Security Toolkit scans a firmware image and gives you a readable report: what is inside it, which known vulnerabilities it matches, and a component inventory you can hand to a customer or a regulator. No toolchain to set up, no sales call, no subscription.</p>
+      <div class="hero-actions">
+        <a class="btn" href="STRIPE_PAYMENT_LINK_URL">Buy now — $129</a>
+        <span class="price-line"><strong>$129</strong> one-time purchase. No subscription.</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="what-it-does">
+    <div class="wrap">
+      <h2>What it does</h2>
+      <p class="section-intro">Point it at a firmware image. It scans the image and writes an HTML report you can read and share. Version 1.0.0.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Firmware triage</h3>
+          <p>Identifies the image format and chip family, maps ELF sections (32-bit and 64-bit), and extracts readable strings, so you know what you are looking at before you dig deeper.</p>
+        </div>
+        <div class="card">
+          <h3>Vulnerability-pattern flagging</h3>
+          <p>Flags risky patterns in the image: hardcoded passwords, private keys, enabled debug interfaces, weak random-number generation, and other known-bad patterns.</p>
+        </div>
+        <div class="card">
+          <h3>CVE lookup</h3>
+          <p>Fingerprints the components and versions in the image and matches them against public CVE data (NVD). Every finding shows the basis for the match, so you can check it yourself.</p>
+        </div>
+        <div class="card">
+          <h3>Component inventory (SBOM)</h3>
+          <p>Exports a component-fingerprint SBOM in CycloneDX or SPDX format — a starting point for the component inventory that customers and regulators increasingly ask for.</p>
+        </div>
+        <div class="card">
+          <h3>Readable HTML report</h3>
+          <p>One report, in plain language: what was scanned, what was found, how serious it is, and what to do about it. Built to be read by a human, not just parsed by a machine.</p>
+        </div>
+        <div class="card">
+          <h3>Runs on Linux today; Windows and macOS coming</h3>
+          <p>A one-click download with a ready-to-run Linux binary. No Python install, no virtual environment, no command-line toolchain to set up first. Windows and macOS binaries ship with the first release and are included free for every buyer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="who-its-for">
+    <div class="wrap">
+      <h2>Who it's for</h2>
+      <p class="section-intro">Built for people who need answers about firmware without an enterprise budget or a Linux lab.</p>
+      <ul class="audience">
+        <li><strong>Product-security engineers at small device makers</strong>Routers, cameras, IoT and industrial devices — anyone who has to answer "what's in your firmware" for a distributor, a customer, or a regulator.</li>
+        <li><strong>Independent security researchers and penetration testers</strong>People who analyse firmware they downloaded or dumped, and want a scan and a report without chaining five command-line tools together.</li>
+        <li><strong>Small OEMs facing EU Cyber Resilience Act deadlines</strong>Vulnerability reporting under the CRA has applied since 11 September 2026, and full compliance — including an SBOM and CE marking — is due 11 December 2027. This tool gives you the component inventory and vulnerability findings to start from.</li>
+        <li><strong>Bug-bounty hunters and firmware analysts</strong>A fast first pass over a firmware image before deeper manual analysis.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="limits">
+    <div class="wrap">
+      <div class="limits">
+        <h2>What version 1 does not do</h2>
+        <p>We would rather tell you plainly than let you find out after paying:</p>
+        <ul>
+          <li><strong>No filesystem extraction yet.</strong> Version 1 identifies compressed containers in an image (such as gzip or xz) but does not unpack them. Filesystem extraction is planned for a later version.</li>
+          <li><strong>The SBOM is component-fingerprint based.</strong> Because version 1 does not unpack firmware, the SBOM lists the components the scanner can fingerprint from the image itself. It is not a full extracted-filesystem SBOM.</li>
+          <li><strong>No emulation or dynamic analysis.</strong> Version 1 is a static scanner: it reads the image, it does not run it.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="sample-report">
+    <div class="wrap">
+      <h2>See the output before you pay</h2>
+      <p class="section-intro">The report is the product. Read a real sample report from a scan before you decide.</p>
+      <div class="sample">
+        <div>
+          <h3>Sample HTML report</h3>
+          <p>A complete report from a scan of a real public firmware image — the same format your scans produce.</p>
+        </div>
+        <a class="btn btn-secondary" href="https://jamesmarcusanderson.github.io/fwtool/sample-report.html">View sample report</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-you-get">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <p class="section-intro">One download, everything included. Version 1.0.0.</p>
+      <ul class="get-list">
+        <li><strong>The tool</strong> <span>Ready-to-run Linux binary. No Python install needed. Windows and macOS binaries are included free when they ship with the first release.</span></li>
+        <li><strong>User guide</strong> <span>Plain-language instructions: installing, running a scan, and reading the report.</span></li>
+        <li><strong>Sample report</strong> <span>An example HTML report, so you know what the output looks like.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how-buying-works">
+    <div class="wrap">
+      <h2>How buying works</h2>
+      <ol class="steps">
+        <li><strong>Click Buy.</strong>You go to a secure Stripe checkout page.</li>
+        <li><strong>Pay by card.</strong>One payment of $129. No account to create, no subscription.</li>
+        <li><strong>Download.</strong>After payment you are taken straight to the download page, where the file is waiting.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="buy">
+    <div class="wrap">
+      <div class="price-box">
+        <h2>Firmware Security Toolkit</h2>
+        <div class="big-price">$129</div>
+        <p class="price-note">One-time purchase. No subscription, no recurring charge.</p>
+        <a class="btn" href="STRIPE_PAYMENT_LINK_URL">Buy now — $129</a>
+        <p class="fine">Secure checkout with Stripe. After payment you are redirected to the download page.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq">
+      <h2>Questions</h2>
+      <h3>Which operating systems does it run on?</h3>
+      <p>Linux today — the download includes a ready-to-run Linux binary. Windows and macOS binaries ship with the first release and are included free for every buyer. The tool also runs from source on any platform with Python 3.11 or newer (no dependencies).</p>
+      <h3>Do I need to install Python or anything else?</h3>
+      <p>No. The download is ready to run.</p>
+      <h3>What if I have a question before I buy?</h3>
+      <p>Email <a href="mailto:jamesmarcusanderson@protonmail.com">jamesmarcusanderson@protonmail.com</a> and you will get an answer from the person who built it.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>
