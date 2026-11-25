@@ -111,6 +111,8 @@ a:hover { color: var(--accent-dark); }
   cursor: pointer;
 }
 .btn:hover { background: var(--accent-dark); color: #fff; }
+.btn[aria-disabled="true"] { cursor: not-allowed; opacity: .65; }
+.btn[aria-disabled="true"]:hover { background: var(--accent); }
 .btn-secondary {
   background: transparent;
   color: var(--accent);
