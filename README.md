@@ -1,6 +1,8 @@
-# Firmware Security Toolkit — Sales Page
+# FirmwareScope — Sales Page
 
-Standalone static sales page for the firmware-security-toolkit v1 product.
+Renamed from fwtool on 2026-11-24.
+
+Standalone static sales page for the FirmwareScope v1 product.
 **This is a fully separate page. Nothing here goes on bareboard.org** — that
 site is free education only and must never carry paid offers.
 
@@ -12,7 +14,7 @@ site is free education only and must never carry paid offers.
 | `download.html` | The post-payment page. The Stripe Payment Link redirects here after a successful payment; it links the product download file. |
 | `styles.css` | Shared stylesheet for both pages. |
 | `shared.js` | Shared header and footer: the markup both pages use lives here once, so a change in one place updates both pages. Each page loads it and marks its navigation with a `data-page` value on its body element. |
-| `fwtool-1.0.0-linux-x86_64.zip` | Linux product bundle. |
+| `firmwarescope-1.0.0-linux-x86_64.zip` | Linux product bundle. |
 | `sample-report.html` | Sample scan report. |
 | `README.md` | This file. |
 
@@ -26,7 +28,7 @@ Wired already (from `product/PACKAGING-REPORT.md`, verified by the coordinator):
 | Value | Replaced with |
 |---|---|
 | `PRODUCT_VERSION` | `1.0.0` (all 5 places) |
-| `DOWNLOAD_FILENAME` | `fwtool-1.0.0-linux-x86_64.zip` |
+| `DOWNLOAD_FILENAME` | `firmwarescope-1.0.0-linux-x86_64.zip` |
 | `DOWNLOAD_URL` | `download.html` links the Linux zip on this site plus the macOS and Windows release assets |
 | `SAMPLE_REPORT_URL` | `index.html` links `sample-report.html`, which is live |
 
@@ -45,9 +47,9 @@ and macOS — and the v1.0.0 release ships a binary for each.
 
 ## Published site
 
-The site is live at https://jamesmarcusanderson.github.io/fwtool/
+The site is live at https://jamesmarcusanderson.github.io/firmwarescope/
 via GitHub Pages (Deploy from a branch, `main`, `/ (root)`).
-The download page is `.../fwtool/download.html` — that is the URL to
+The download page is `.../firmwarescope/download.html` — that is the URL to
 paste into Stripe as the after-payment redirect.
 
 ## What James must do himself (payment setup)
@@ -63,7 +65,7 @@ Proprietor → turn on two-factor authentication → activate the account with
 his identity and bank details → upload photo ID if Stripe asks → create the
 product and a Payment Link priced at **$129** → in the link's after-payment
 settings, choose **redirect to a URL** and paste the download-page address
-(`https://jamesmarcusanderson.github.io/fwtool/download.html`) → test in Stripe test mode → switch the link to live and
+(`https://jamesmarcusanderson.github.io/firmwarescope/download.html`) → test in Stripe test mode → switch the link to live and
 hand the live Payment Link URL to the crew to put on the sales page.
 
 Notes worth knowing:

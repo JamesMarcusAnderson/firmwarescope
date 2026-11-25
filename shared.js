@@ -1,4 +1,4 @@
-/* Shared page furniture for the Firmware Security Toolkit sales site.
+/* Shared page furniture for the FirmwareScope sales site.
    Both pages load this file, and the header and footer markup lives
    here and nowhere else, so a change in one place updates both pages.
    Each page marks which navigation it needs with a data-page value
@@ -27,14 +27,13 @@
                 links[i][1] + "</a>";
         }
         return '<header class="site-header">\n  <div class="wrap">\n' +
-            '    <a class="brand" href="index.html">Firmware Security ' +
-            "<span>Toolkit</span></a>\n" +
+            '    <a class="brand" href="index.html">FirmwareScope</a>\n' +
             '    <nav class="site-nav">' + nav + "\n    </nav>\n" +
             "  </div>\n</header>";
     }
 
     var footerMarkup = '<footer class="site-footer">\n  <div class="wrap">\n' +
-        "    <p>Firmware Security Toolkit, version 1.0.0. Built by " +
+        "    <p>FirmwareScope, version 1.0.0. Built by " +
         "James Marcus Anderson, Houston, TX.</p>\n" +
         '    <p>Questions or support: <a href="mailto:' +
         "jamesmarcusanderson@protonmail.com\">" +
